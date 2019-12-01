@@ -33,4 +33,11 @@ echo 'code review success'
 }
 }
 }
+post
+{
+always
+{
+cleanWs()
+}
+}
 }
