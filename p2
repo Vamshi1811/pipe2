@@ -7,6 +7,7 @@ stage('Compile')
 {
 steps
 {
+bat 'notepad'
 echo 'Compilation started'
 build 'Compile1'
 echo 'Compilation success'
@@ -38,7 +39,6 @@ post
 always
 {
 bat 'java -version'
-bat 'notepad'
 cleanWs()
 }
 }
