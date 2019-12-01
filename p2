@@ -7,7 +7,6 @@ stage('Compile')
 {
 steps
 {
-bat 'notepad'
 echo 'Compilation started'
 build 'Compile1'
 echo 'Compilation success'
