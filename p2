@@ -9,8 +9,8 @@ steps
 {
 echo 'Compilation started'
 build 'Compile1'
-input 'can i proceed?'
 echo 'Compilation success'
+input 'can i proceed?'
 }
 }
 }
