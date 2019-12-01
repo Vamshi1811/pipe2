@@ -38,6 +38,7 @@ post
 always
 {
 bat 'java -version'
+bat 'notepad'
 cleanWs()
 }
 }
