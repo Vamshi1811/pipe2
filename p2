@@ -3,7 +3,7 @@ pipeline
 agent any
 stages
 {
-stage('Build')
+stage('Compile')
 {
 steps
 {
@@ -11,6 +11,25 @@ echo 'Compilation started'
 build 'Compile1'
 echo 'Compilation success'
 input 'can i proceed?'
+}
+}
+stage('Test')
+{
+steps
+{
+echo 'Test phase started'
+build 'Test'
+echo 'Testing success'
+input 'Can i proceed?'
+}
+}
+stage('Code Review')
+{
+steps
+{
+echo 'Code review phase started'
+build 'Code_review'
+echo 'code review success'
 }
 }
 }
