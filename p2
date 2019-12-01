@@ -1,0 +1,17 @@
+pipeline
+{
+agent any
+stages
+{
+stage('Build')
+{
+steps
+{
+echo 'Build started'
+build 'ant1'
+input 'can i proceed?'
+echo 'Build success'
+}
+}
+}
+}
