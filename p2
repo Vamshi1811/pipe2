@@ -39,6 +39,7 @@ always
 {
 bat 'java -version'
 cleanWs()
+emailext body: '', subject: 'Build details', to: 'pottivamshi143@gmail.com'
 }
 }
 }
